@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Taino Bay</string>
+    <string name="title_activity_main">Taino Bay</string>
+    <string name="package_name">com.itmgroup.appTainobay</string>
+    <string name="custom_url_scheme">com.itmgroup.appTainobay</string>
+</resources>
