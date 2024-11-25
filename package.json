@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@capacitor/android": "^6.1.2",
+    "@capacitor-community/http": "^1.4.1",
+    "@capacitor/android": "^6.2.0",
     "@capacitor/cli": "^6.1.2",
     "@capacitor/core": "^6.1.2",
-    "@capacitor/ios": "^6.1.2",
+    "@capacitor/filesystem": "^6.0.2",
+    "@capacitor/ios": "^6.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -22,6 +24,13 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "rules": {
+      "no-restricted-globals": [
+        "error",
+        "event",
+        "fdescribe"
+      ]
+    },
     "extends": [
       "react-app",
       "react-app/jest"
@@ -40,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/assets": "^3.0.5"
+    "@capacitor/assets": "^3.0.5",
+    "workbox-webpack-plugin": "^7.3.0"
   }
 }
