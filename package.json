@@ -20,6 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:full": "npm run build && npx cap sync && npm install @capacitor/ios && npm install @capacitor/android && npx capacitor-assets generate && npx cap open android && npx cap add android && npx cap add ios",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
